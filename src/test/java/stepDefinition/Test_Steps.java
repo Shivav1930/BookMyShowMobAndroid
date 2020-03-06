@@ -18,7 +18,7 @@ public class Test_Steps extends BaseSteps{
 
 	 @Given("^The application is launched$")
 	 public void application_Launched() {
-		
+		 System.out.println("hello");
 	 }
 	 
 	   
