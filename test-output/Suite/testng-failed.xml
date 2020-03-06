@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="port" value="5000"/>
+  <parameter name="platformVersion" value="9.0"/>
+  <parameter name="udid" value="796b01a0"/>
+  <parameter name="deviceName" value="Galaxy M30s"/>
+  <test thread-count="5" name="Test" parallel="classes">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="7.0"/>
+    <parameter name="udid" value="4200cc386a65847f"/>
+    <parameter name="deviceName" value="Galaxy J7 Max"/>
+    <classes>
+      <class name="cucumberRunnerTest.TestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test-LG-G4" parallel="classes">
+    <parameter name="port" value="5000"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="udid" value="796b01a0"/>
+    <parameter name="deviceName" value="Galaxy M30s"/>
+    <classes>
+      <class name="cucumberRunnerTest.TestRunner"/>
+    </classes>
+  </test> <!-- Test-LG-G4 -->
+  <test name="Test(failed)" parallel="classes">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="7.0"/>
+    <parameter name="udid" value="4200cc386a65847f"/>
+    <parameter name="deviceName" value="Galaxy J7 Max"/>
+    <classes>
+      <class name="cucumberRunnerTest.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="feature"/>
+          <include name="report"/>
+          <include name="report"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cucumberRunnerTest.TestRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test name="Test-LG-G4(failed)" parallel="classes">
+    <parameter name="port" value="5000"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="udid" value="796b01a0"/>
+    <parameter name="deviceName" value="Galaxy M30s"/>
+    <classes>
+      <class name="cucumberRunnerTest.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="report"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cucumberRunnerTest.TestRunner -->
+    </classes>
+  </test> <!-- Test-LG-G4(failed) -->
+</suite> <!-- Failed suite [Suite] -->

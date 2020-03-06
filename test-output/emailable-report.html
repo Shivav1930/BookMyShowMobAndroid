@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">2,660</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Test-LG-G4</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">90,939</td><td></td><td></td></tr><tr><th>Total</th><th class="num">0</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">93,599</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">cucumberRunnerTest.TestRunner</td><td><a href="#m0">setup</a></td><td rowspan="1">1583463809857</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">cucumberRunnerTest.TestRunner</td><td><a href="#m1">feature</a></td><td rowspan="1">1583463811775</td><td rowspan="1">2</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Test-LG-G4 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">cucumberRunnerTest.TestRunner</td><td><a href="#m2">feature</a></td><td rowspan="1">1583463819939</td><td rowspan="1">79370</td></tr></tbody></table><h2>Test</h2><h3 id="m0">cucumberRunnerTest.TestRunner#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>4200cc386a65847f</td><td>4723</td><td>Galaxy J7 Max</td><td>7.0</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Device 4200cc386a65847f was not in the list of connected devices
+Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;
+System info: host: &apos;DESKTOP-ITT84LQ&apos;, ip: &apos;192.168.43.49&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Device 4200cc386a65847f was not in the list of connected devices
+    at getResponseForW3CError (C:\Users\OK\AppData\Local\appium-desktop\app-1.10.0\resources\app\node_modules\appium-base-driver\lib\protocol\errors.js:826:9)
+    at asyncHandler (C:\Users\OK\AppData\Local\appium-desktop\app-1.10.0\resources\app\node_modules\appium-base-driver\lib\protocol\protocol.js:447:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:142)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:36)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:114)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:132)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
+	at cucumberRunnerTest.TestRunner.setup(TestRunner.java:67)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">cucumberRunnerTest.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>BookMyShow Tickets Booking</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Test-LG-G4</h2><h3 id="m2">cucumberRunnerTest.TestRunner#feature</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>BookMyShow Tickets Booking</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at com.bookmyshow.pom.base.BasePage.reportFailure(BasePage.java:149)
+	at com.bookmyshow.pom.base.BasePage.click(BasePage.java:165)
+	at com.bookmyshow.pom.pages.MovieTicketBooking.SelectEngLang(MovieTicketBooking.java:53)
+	at stepDefinition.Test_Steps.SelectEngLang(Test_Steps.java:29)
+	at ?.When English is selected as the language(LogIn_Test.feature:8)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
